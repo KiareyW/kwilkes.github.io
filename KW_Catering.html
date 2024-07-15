@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+   <title>Catering by Kiareys Wings & Grill</title>
+    <link href="style.css" rel="stylesheet" />
+	<link href="layout.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+      <img src="catering.png" alt="Catering" />
+  </header>
+  <article>
+     <h1> Catering</h1>
+	 <p> One of goals is to be able to provide catering to events
+	 of all sizes. We plan to provide catering to all of the
+	 charlotte metropolitan area. To make this all possible,
+	 we have three catering vans on standby or you can come by and pick
+	 up your order with our assistance.</p>
+	 <p> Depending on the size of the event and if the venue
+	 have a kitchen we can prepare and cook the meals on spot.
+	 But if no kitchen can be provided, we at least at 24 hour
+	 notice when placing an catering order so we can serve the event
+	 with nothing but the best meals anyone can offer.</p>
+	 <p> Come on down and order the best for your event and
+	 impress and put your peers and family to Charlotte new
+	 favorite resturant. Create your catering down below.</p>
+   </article>
+   <!-- Below is my form -->
+   <form action="submission.html" method="POST">
+   <h1>Create Catering Order!</h1>
+   <!--Below I used the dropdown list method -->
+   <label for="entree"> What is your main entree</label>
+   <select name="entree" id="entree">
+            <option value="wings">Wings</option>
+            <option value="burgers">Burgers</option>
+            <option value="salads">Salads</option>
+	</select>
+	 <div>
+	 <!-- Used the number input method -->
+	 <label for="amount">How many entrees would you like?</label>
+          <input type="number" name="amount" id="amount">
+	  </div>
+	  <br>
+	  <!-- Used the datalist input -->
+	  <section class="sauce-selection">
+	  <label for="sauce">If ordering wings what type of sauce would you like?</label>
+          <input type="text" list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="BBQ"></option>
+            <option value="Buffalo"></option>
+            <option value="Mild"></option>
+			<option value="Plain"></option>
+	    </section>
+		<!-- Date input was used -->
+	   <label for="event">What is the date of your event?</label>
+	   <input type="date" id="event">
+	   <section class="prepare">
+	   <!-- Used checkbox input -->
+	   <span>Do the venue of your event have a kitchen?</span>
+	   <br>
+	   <input id="yes" name="answer"
+          type="checkbox" value="yes">
+		<label for="yes">Yes</label><br>
+	   <input type="submit">

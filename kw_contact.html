@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+   <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet" />
+	<link href="layout.css" rel="stylesheet" />
+</head>
+
+<body>
+   <img src="contact.png" alt="Contact">
+   <!-- Below is my form -->
+    <form action="submission.html" method="POST">
+     <h1>Contact Us</h1>
+	 <div>
+	 <!-- Used the text input for the inputs down below  and made sure the right things was required-->
+	    <label for="fname">first name:</label>
+	    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+	 </div>
+	 <br>
+	 <div>
+	 <label for="lname">last name:</label>
+	 <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+	 </div>  
+	  <br>
+	 <div>
+	 <label for="email">email:</label>
+	 <input type="text" id="email" name="email" placeholder="Email" required>
+	 </div>
+	 <br>
+	 <!-- Used the radio input -->
+	 <label for="type of comment">Type of Comment:</label>
+	 <label for="compliment">Compliment</label>
+	 <input type="radio" id="compliment" value="compliment" name="comment">
+	 <label for="concerns">Concerns</label>
+	 <input type="radio" id="concerns" value="concerns" name="comment">
+	 <!-- Used the textbox input and set the field length -->
+	 <textarea id="comment" rows="10" cols="40" maxlength="120"></textarea>
+	 <div>
+	 <!-- Used the submit and reset inputs -->
+	   <input type="reset"><br>
+	   <input type="submit">
+	 </div>
+	 <footer>
+        Kiareys Wings & Grill 125 Anywhere Drive, Charlotte NC 28105 704-555-9800
+   </footer>
+  </body>
+  
+  </html>
+	 
